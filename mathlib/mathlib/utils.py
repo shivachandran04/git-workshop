@@ -4,7 +4,7 @@ def validate_matrix(matrix):
     :param matrix: 2D list representing the matrix.
     :return: True if valid, raises ValueError otherwise.
     """
-    # TODO: Person 1 - Implement matrix validation logic
+    # TODO: Person 4 - Implement matrix validation logic
     pass
 
 def check_dimensions(matrix1, matrix2):
@@ -14,7 +14,7 @@ def check_dimensions(matrix1, matrix2):
     :param matrix2: Second matrix (2D list).
     :return: True if dimensions are compatible, raises ValueError otherwise.
     """
-    # TODO: Person 2 - Implement dimension check logic
+    # TODO: Person 4 - Implement dimension check logic
     pass
 
 def identity_matrix(size):
@@ -23,7 +23,7 @@ def identity_matrix(size):
     :param size: The number of rows/columns for the identity matrix.
     :return: Identity matrix as a 2D list.
     """
-    # TODO: Person 3 - Implement identity matrix creation
+    # TODO: Person 4 - Implement identity matrix creation
     pass
 
 def zero_matrix(rows, cols):
@@ -44,7 +44,10 @@ def minor(matrix, row, col):
     :param col: The column to remove.
     :return: The minor matrix as a 2D list.
     """
-    # TODO: Person 1 & Person 3 - Implement minor calculation
+    # TODO: Person 3 & 4 - Implement minor calculation
+    # Either code together or have one person code and the other review
+    # If coding together, use pair programming & co-author the commit (git commit -m "message" -m "Co-authored-by: name <email>")
+    # If reviewing, leave comments on what you think can be improved
     pass
 
 def cofactor(matrix):
@@ -53,5 +56,8 @@ def cofactor(matrix):
     :param matrix: 2D list representing the matrix.
     :return: Cofactor matrix as a 2D list.
     """
-    # TODO: Person 2 & Person 4 - Implement cofactor calculation
+    # TODO: Person 3 & Person 4 - Implement cofactor calculation
+    # Either code together or have one person code and the other review
+    # ...
     pass
+
