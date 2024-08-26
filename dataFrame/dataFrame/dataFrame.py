@@ -56,23 +56,56 @@ class DataFrame:
         column_str = " | ".join(self.columns)
         rows_str = "\n".join(" | ".join(map(str, row)) for row in self.data)
         return f"{column_str}\n{rows_str}"
+    
+    
+    # More core functionalities like get_column, set_column, etc (potentially)
+    
+    
+    def remove_duplicates(self):
+        """
+        Removes duplicate rows from the DataFrame.
+        """
+        # Use a set to track seen rows
+        seen = set()
+        unique_data = []
+        for row in self.data:
+            tuple_row = tuple(row)
+            if tuple_row not in seen:
+                seen.add(tuple_row)
+                unique_data.append(row)
+        self.data = unique_data
 
-
-    # TODO: Person 1 - Implement matrix outer product (__matmul__)
-
-    # TODO: Person 2 - Implement matrix transposition (transpose)
-
-    # TODO: Person 1 & 2 - Implement determinant calculation (determinant)
-    # Either code together or have one person code and the other review
-    # If coding together, use pair programming & co-author the commit (git commit -m "message" -m "Co-authored-by: name <email>")
-    # If reviewing, leave comments on what you think can be improved
-
-    # TODO: Person 1 & 2 - Implement inverse calculation (inverse)
-    # Either code together or have one person code and the other review
-    # ...
-
-    # TODO: Person 3 - Implement a function that concatenates two matrices horizontally (hconcat)
-
-    # TODO: Person 3 - Implement a function that concatenates two matrices vertically (vconcat)
-
-    # TODO: Person 3 & 4 - Implement matrix eigenvalues and eigenvectors (eigen)
+    def combine_columns(self, col1: str, col2: str, new_col: str, operation):
+        """
+        Combines two columns in the DataFrame based on a specified operation.
+        
+        :param col1: The name of the first column.
+        :param col2: The name of the second column.
+        :param new_col: The name of the new column to create.
+        :param operation: A function that takes two arguments and returns a value (e.g., addition, multiplication).
+        """
+        if col1 not in self.columns or col2 not in self.columns:
+            raise ValueError("Both columns must exist in the DataFrame")
+        
+        # Find the indices of the columns
+        index1 = self.columns.index(col1)
+        index2 = self.columns.index(col2)
+        
+        # Apply the operation and create the new column
+        new_data = []
+        for row in self.data:
+            new_value = operation(row[index1], row[index2])
+            new_data.append(row + [new_value])
+        
+        # Update the DataFrame
+        self.data = new_data
+        self.columns.append(new_col)
+        
+        
+# Implement the following:
+# 1. renaming columns
+# 2. concatenating two tables (vertically, horizontally)
+# 3. a mapping function (applying one transformation to each element of the 
+#    entire dataframe, or to a particular column)
+    
+    
