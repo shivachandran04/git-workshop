@@ -102,7 +102,7 @@ class DataFrame:
         self.columns.append(new_col)
         
         
-# Implement the following:
+# Implement the following (these can be TODO's?... some may be difficult):
 # 1. renaming columns
 # 2. concatenating two tables (vertically, horizontally)
 # 3. a mapping function (applying one transformation to each element of the 
