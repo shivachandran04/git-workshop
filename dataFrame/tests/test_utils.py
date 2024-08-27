@@ -1,5 +1,5 @@
-from dataFrame import Matrix
-from dataFrame.utils import *
+from dataframe import Matrix
+from dataframe.utils import *
 import pytest
 
 # TODO: ALL - Implement tests for the rest of the utils functions
