@@ -1,5 +1,5 @@
 import time
-from dataFrame import DataFrame
+from dataframe import DataFrame
 
 def benchmark_dataframe_operations():
     # Example dataframes

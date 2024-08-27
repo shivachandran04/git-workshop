@@ -1,4 +1,4 @@
-from dataFrame import DataFrame
+from dataframe import DataFrame
 
 # TODO: ALL - Implement tests for all other DataFrame methods
 # Use the {} test as a reference
