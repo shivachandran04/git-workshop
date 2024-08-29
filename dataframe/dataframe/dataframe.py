@@ -203,7 +203,7 @@ class DataFrame:
         """
         Applies a function to each element of the entire DataFrame or to a specific column.
         
-        :param func: A function to apply to each element.
+        :param func: A mapping function to apply to each element.
         :param axis: If None, applies to all elements; if 0, applies to each column.
         :param column: Name of the column to apply the function to (if axis is None).
         """
