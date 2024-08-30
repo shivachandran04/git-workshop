@@ -143,11 +143,14 @@ class DataFrame:
 
 
     def remove_na(self) -> 'DataFrame':
-        """Return DataFrame that has all rows containing Nan values removed."""
+        """Return DataFrame that has all rows containing NaN values removed.
+        NaN means Not a Number and is when values are missing or undefined.
+        """
         # TODO: Person 1 - Implement this function
 
     def replace_na(self, value: float) -> 'DataFrame':
         """Return DataFrame that replaces NaN with the specific value.
+        NaN means Not a Number and is when values are missing or undefined.
         
         :param value: New value that replaces NaN."""
         # TODO: Person 2 - Implement this function
