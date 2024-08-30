@@ -142,6 +142,16 @@ class DataFrame:
         # TODO: Person 2 - Implement this function
 
 
+    def remove_na(self) -> 'DataFrame':
+        """Return DataFrame that has all rows containing Nan values removed."""
+        # TODO: Person 1 - Implement this function
+
+    def replace_na(self, value: float) -> 'DataFrame':
+        """Return DataFrame that replaces NaN with the specific value.
+        
+        :param value: New value that replaces NaN."""
+        # TODO: Person 2 - Implement this function
+
     def apply(self, func, column: str = None):
         """
         Applies a function to a specific column or all elements in the DataFrame.

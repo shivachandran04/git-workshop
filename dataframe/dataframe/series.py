@@ -38,6 +38,29 @@ class Series:
         """Return the mean of the data in the series."""
         # TODO: Person 4 - Implement this function
 
+    def mode(self) -> float:
+        """Return the mode of the data in the series."""
+        # TODO: Person 3 - Implement this function
+
+    def unique_val(self) -> list:
+        """Return the unique values in the series."""
+        # TODO: Person 4 - Implement this function
+
+    def contains(self, value: float) -> bool:
+        """
+        Return if the series contains the value.
+        
+        :param value: The specific value being checked.
+        """
+        # TODO: Person 3 - Implement this function
+
+    def replace(self, current_val: float, new_val: float) -> 'Series':
+        """Return a new Series with a specific current value replaced with a new value.
+        
+        :param current_val: The current value. 
+        :param new_value: The new value that will replace current value.
+        """
+        # TODO: Person 4 - Implement this function
 
     def apply(self, func):
         """
