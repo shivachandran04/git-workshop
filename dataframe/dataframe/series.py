@@ -49,20 +49,20 @@ class Series:
     def contains(self, value: float) -> bool:
         """
         Return if the series contains the value.
-        
+
         :param value: The specific value being checked.
         """
         # TODO: Person 3 - Implement this function
 
-    def replace(self, current_val: float, new_val: float) -> 'Series':
+    def replace(self, current_val: float, new_val: float) -> Series:
         """Return a new Series with a specific current value replaced with a new value.
-        
+
         :param current_val: The current value. 
         :param new_value: The new value that will replace current value.
         """
         # TODO: Person 4 - Implement this function
 
-    def apply(self, func):
+    def apply(self, func) -> Series:
         """
         Apply a mapping function to each element in the series and return a new Series.
 
@@ -70,5 +70,3 @@ class Series:
         :return: A new Series with the function applied.
         """
         # TODO: Person 3 - Implement this function
-    
-    
