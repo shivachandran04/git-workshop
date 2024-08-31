@@ -11,6 +11,7 @@ This repo contains the materials for the MDST Git & GitHub workshop (first hoste
 6. Begin coding!
 
 ## Using Git & GitHub
+Use this [guide](https://mdst-club.notion.site/Git-GitHub-for-Team-Collaboration-374704db26ba4c4f984c54963b957659?pvs=74) to help you work through each required steps. 
 
 As you complete the particular project your group is assigned to, follow this workflow:
 
