@@ -36,6 +36,14 @@ class Matrix:
 
 
     # TODO: Person 1 - Implement matrix outer product (__matmul__)
+    def __matmul__(self, other):
+        matrix = list()
+        for n in self.data:
+            inside = list()
+            for m in other.data:
+                inside.append(n * m)
+            matrix.append(inside)
+        return Matrix(matrix)
 
     # TODO: Person 2 - Implement matrix transposition (transpose)
 
@@ -43,6 +51,15 @@ class Matrix:
     # Either code together or have one person code and the other review
     # If coding together, use pair programming & co-author the commit (git commit -m "message" -m "Co-authored-by: name <email>")
     # If reviewing, leave comments on what you think can be improved
+    def determinant(self):
+        if (len(self.data[0]) != len(self.data)):
+            raise ValueError("Must be square matrix to calculate determinant.")
+        for row in self.data:
+            pass
+        pass
+
+    def two_determinant(self):
+        return (self.data[0][0] * self.data[1][1]) - (self.data[0][1] * self.data[1][0])
 
     # TODO: Person 1 & 2 - Implement inverse calculation (inverse)
     # Either code together or have one person code and the other review
