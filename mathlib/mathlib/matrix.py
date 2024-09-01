@@ -49,7 +49,17 @@ class Matrix:
     # ...
 
     # TODO: Person 3 - Implement a function that concatenates two matrices horizontally (hconcat)
+    def hconcat(self, mat2):
+        assert len(self.data) == len(mat2) #number of rows is the same
+        for row_idx in range(len(self.data)):
+            self.data[row_idx] = self.data[row_idx].extend(mat2[row_idx])
+        return self.data
 
     # TODO: Person 3 - Implement a function that concatenates two matrices vertically (vconcat)
+    def vconcat(self, mat2):
+        assert len(self.data[0]) == len(mat2[0]) #number of columns is the same
+        for row in mat2:
+            self.data.append(row)
+        return self.data
 
     # TODO: Person 3 & 4 - Implement matrix eigenvalues and eigenvectors (eigen)
