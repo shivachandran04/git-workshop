@@ -1,3 +1,4 @@
+from utils import cofactor, minor, zero_matrix
 class Matrix:
     """
     A class to represent a matrix.
@@ -34,7 +35,6 @@ class Matrix:
         """
         return Matrix([[self.data[i][j] * other for j in range(len(self.data[0]))] for i in range(len(self.data))])
 
-
     # TODO: Person 1 - Implement matrix outer product (__matmul__)
 
     # TODO: Person 2 - Implement matrix transposition (transpose)
@@ -49,6 +49,13 @@ class Matrix:
     # TODO: Person 1 & 2 - Implement inverse calculation (inverse)
     # Either code together or have one person code and the other review
     # ...
+    # def inverse(self):
+    #     if(len(self.data[0]) != len(self.data)):
+    #         raise Exception('NOT SQUARE MATRIX!!!!')
+    #     # create minor
+    #     mat = zero_matrix(len(self.data), len(self.data[0]))
+    #     for i in range(mat[])
+        
 
     # TODO: Person 3 - Implement a function that concatenates two matrices horizontally (hconcat)
 
