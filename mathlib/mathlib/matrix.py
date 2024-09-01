@@ -34,10 +34,17 @@ class Matrix:
         """
         return Matrix([[self.data[i][j] * other for j in range(len(self.data[0]))] for i in range(len(self.data))])
 
-
     # TODO: Person 1 - Implement matrix outer product (__matmul__)
 
     # TODO: Person 2 - Implement matrix transposition (transpose)
+    def transpose(self):
+        """
+        Transpose a matrix.
+        """
+        return Matrix([[row[i] for row in self.data] for i in range(len(self.data[0]))])
+
+
+
 
     # TODO: Person 1 & 2 - Implement determinant calculation (determinant)
     # Either code together or have one person code and the other review

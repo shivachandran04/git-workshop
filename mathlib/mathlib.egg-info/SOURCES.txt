@@ -1,0 +1,8 @@
+setup.py
+mathlib/__init__.py
+mathlib/matrix.py
+mathlib/utils.py
+mathlib.egg-info/PKG-INFO
+mathlib.egg-info/SOURCES.txt
+mathlib.egg-info/dependency_links.txt
+mathlib.egg-info/top_level.txt
