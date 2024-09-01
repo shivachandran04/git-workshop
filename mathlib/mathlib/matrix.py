@@ -1,3 +1,4 @@
+from utils import cofactor
 class Matrix:
     """
     A class to represent a matrix.
@@ -54,12 +55,12 @@ class Matrix:
     def determinant(self):
         if (len(self.data[0]) != len(self.data)):
             raise ValueError("Must be square matrix to calculate determinant.")
-        for row in self.data:
-            pass
-        pass
-
-    def two_determinant(self):
-        return (self.data[0][0] * self.data[1][1]) - (self.data[0][1] * self.data[1][0])
+        cofac = cofactor(self)
+        total = 0
+        for elt in cofac.data[0]:
+            total += elt
+        return total
+            
 
     # TODO: Person 1 & 2 - Implement inverse calculation (inverse)
     # Either code together or have one person code and the other review
